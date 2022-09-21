@@ -3,6 +3,6 @@ variable "organization_admins" {
   description = "GitHub Organization Admins"
   default = [
     "martedesco",  # Marcio
-    "eroullit", # Emmanuel
+    "eroullit",    # Emmanuel
   ]
 }
