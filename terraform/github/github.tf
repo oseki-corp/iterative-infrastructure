@@ -1,4 +1,14 @@
 # see https://registry.terraform.io/providers/integrations/github/latest/docs
+terraform {
+  cloud {
+    organization = "eroullit"
+
+    workspaces {
+      name = "example-workspace"
+    }
+  }
+}
+
 provider "github" {
   # The token value is retrieved from the environment variable `GITHUB_TOKEN`
   # token = "..."
