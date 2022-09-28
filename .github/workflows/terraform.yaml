@@ -30,6 +30,10 @@ jobs:
         with:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
+      - name: Run `terraform login`
+        id: login
+        run: terraform login
+
       - name: Run `terraform fmt`
         id: fmt
         run: terraform fmt -diff -check -no-color -recursive
